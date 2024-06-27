@@ -113,7 +113,7 @@ Write-Output "Downloading Source Code from GitHub and Grabbing latest Version...
 ##Download Source Code
 
 # Define the URL of the file to download
-$url = "https://github.com/KimDog-Studios/KimDog_Utility_Main/releases/download/latest/Local.Version.zip"
+$url = "https://github.com/KimDog-Studios/KimDog_Local_Utility/releases/download/release/KimDog_Local_Utility.zip"
 
 # Define the base path and folders
 $baseFolder = "C:\"
@@ -122,7 +122,6 @@ $kimDogUtilityFolder = "KimDog's Utility"
 $kimDogStudiosPath = Join-Path -Path $baseFolder -ChildPath $kimDogStudiosFolder
 $extractPath = Join-Path -Path $kimDogStudiosPath -ChildPath $kimDogUtilityFolder
 $zipFile = Join-Path -Path $kimDogStudiosPath -ChildPath "Local.Version.zip"
-$exeFile = Join-Path -Path $extractPath -ChildPath "UtilityGUI.exe"  # Adjust this based on your actual .exe file name
 
 # Function to download the file
 function Download-File {
@@ -221,6 +220,27 @@ function Create-StartMenuShortcut {
     }
 }
 
+# Function to find executable within a directory
+function Find-Executable {
+    param (
+        [string]$directory
+    )
+
+    try {
+        $exeFile = Get-ChildItem -Path $directory -Filter "*.exe" -Recurse | Select-Object -First 1 -ExpandProperty FullName
+
+        if ($exeFile) {
+            Write-Output $exeFile
+        }
+        else {
+            Write-Error "Executable file not found in $directory"
+        }
+    }
+    catch {
+        Write-Error "Failed to find executable: $_"
+    }
+}
+
 # Function to compare and replace files
 function Compare-And-ReplaceFiles {
     param (
@@ -280,14 +300,17 @@ Extract-ZipFile -zipFile $zipFile -extractPath $extractPath
 # Optionally, remove the zip file after extraction
 Remove-Item -Path $zipFile -Force
 
+# Find the executable within the extracted directory
+$exeFile = Find-Executable -directory $extractPath
+
 # Compare and replace files
 Compare-And-ReplaceFiles -sourcePath $extractPath -destinationPath $extractPath
 
 # Create shortcuts
-if (Test-Path -Path $exeFile) {
+if ($exeFile) {
     Create-DesktopShortcut -targetPath $exeFile -shortcutName "KimDog's Utility"
     Create-StartMenuShortcut -targetPath $exeFile -shortcutName "KimDog's Utility"
 }
 else {
-    Write-Error "Executable file not found: $exeFile"
+    Write-Error "Executable file not found in $extractPath"
 }
