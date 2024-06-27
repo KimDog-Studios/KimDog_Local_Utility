@@ -1,0 +1,110 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "UtilityGUI/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Runtime": "1.0.1",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "13.0.3",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.22621.31"
+        },
+        "runtime": {
+          "UtilityGUI.dll": {}
+        }
+      },
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.22621.31": {
+        "runtime": {
+          "Microsoft.Windows.SDK.NET.dll": {
+            "assemblyVersion": "10.0.22621.30",
+            "fileVersion": "10.0.22621.31"
+          },
+          "WinRT.Runtime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.4.44211"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Runtime/1.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
+          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+        }
+      },
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {},
+      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UtilityGUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.22621.31": {
+      "type": "runtimepack",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Runtime/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WIblAPds88Mwvcu8OjmspmHLG9zyay//n1jMVxQlxikGzZBIeRDz/O7o9qBtOR+vDpfn+Y2EbzdCmPb3brMGRg==",
+      "path": "microsoft.netcore.runtime/1.0.1",
+      "hashPath": "microsoft.netcore.runtime.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EQlk4pidS+VppUSjhCCMXYlw9mf/47BwyM5XIX/gQHp5/qedKG7jypSMy0SGwv80U5mr1juQC0YROqjr7j8nTA==",
+      "path": "microsoft.netcore.runtime.coreclr/1.0.1",
+      "hashPath": "microsoft.netcore.runtime.coreclr.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Runtime.Native/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VeZR/qn/+FRH5rd1htnwBFIzSBW6xiA7Yu2UzaHKKlyf9Ev9xVXIOitWnkvb/tJMTKdmiCzmfi2TsAMajUHNZA==",
+      "path": "microsoft.netcore.runtime.native/1.0.1",
+      "hashPath": "microsoft.netcore.runtime.native.1.0.1.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    }
+  }
+}
