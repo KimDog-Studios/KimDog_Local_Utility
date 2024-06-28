@@ -1,12 +1,19 @@
 {
-    "categories": {
-        "Web Browsers": [
-            { "name": "Google Chrome", "id": "Google.Chrome", "description": "A fast, free web browser." },
-            { "name": "Mozilla Firefox", "id": "Mozilla.Firefox", "description": "A free and open-source web browser." }
-        ],
-        "Text Editors": [
-            { "name": "Visual Studio Code", "id": "Microsoft.VisualStudioCode", "description": "A source-code editor made by Microsoft." },
-            { "name": "Notepad++", "id": "Notepad++", "description": "A free source code editor and Notepad replacement." }
-        ]
+  "Applications": [
+    {
+      "Name": "Google Chrome",
+      "ID": "Google.Chrome",
+      "Command": "install --id=Google.Chrome -e"
+    },
+    {
+      "Name": "Mozilla Firefox",
+      "ID": "Mozilla.Firefox",
+      "Command": "install --id=Mozilla.Firefox -e"
+    },
+    {
+      "Name": "Opera GX",
+      "ID": "Opera.OperaGX",
+      "Command": "install --id=Opera.OperaGX -e"
     }
+]
 }
