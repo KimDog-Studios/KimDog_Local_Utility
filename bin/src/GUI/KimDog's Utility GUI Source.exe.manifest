@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KimDog's Utility GUI Source.exe" size="808448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KimDog's Utility GUI Source.exe" size="760320">
       <assemblyIdentity name="KimDog's Utility GUI Source" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I9vJ/4Xkb0U7+3WTHIDZTl2I/h4zJ7WM/IYucKHL94o=</dsig:DigestValue>
+        <dsig:DigestValue>jvBhXB+Ivz19dc/lcTwHHFxToFBAtZyydkueNExp5+c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
