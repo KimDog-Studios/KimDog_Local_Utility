@@ -2,4 +2,4 @@ This application is Developed by KimDog! Please note the app is in Alpha so thin
 
 Default Instrall Location is: C:\Program Files (x86)\KimDog-Studios\KimDog's Utility
 
-To Contribute to the Project go to our GitHub Page!: 
+To Contribute to the Project go to our GitHub Page: https://github.com/KimDog-Studios/KimDog_Local_Utility/tree/main
