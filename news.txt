@@ -1,1 +1,5 @@
 This application is Developed by KimDog! Please note the app is in Alpha so things will be updated alot atm.
+
+Default Instrall Location is: C:\Program Files (x86)\KimDog-Studios\KimDog's Utility
+
+To Contribute to the Project go to our GitHub Page!: 
